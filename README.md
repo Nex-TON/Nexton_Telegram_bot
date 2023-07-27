@@ -1,6 +1,6 @@
 # Hack_a_TON_Telegram_bot
 
-Telegram Bot Server README
+Telegram Bot Server README   
 This server code is for setting up a Telegram bot using Node.js and the node-telegram-bot-api library.
 
 ## Dependencies
@@ -17,7 +17,7 @@ npm install express dotenv cors node-telegram-bot-api
 ```
 
 ## Getting Started
-To get started, you'll need to create a .env file in your project root directory, where you will store your Telegram bot token. The structure of the file should be like this:
+To get started, you'll need to create an .env file in your project root directory, where you will store your Telegram bot token. The content of the file should be like this:
 
 ```
 TELEGRAM_BOT_TOKEN=your-telegram-bot-token
