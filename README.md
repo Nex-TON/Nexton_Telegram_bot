@@ -50,13 +50,7 @@ The bot is set up to listen to the following events:
 
 - **message**: This event is triggered whenever a user sends a message to the bot. The chatId of the user is stored for use in other functions.
 
-**Error Handling**
-If there is an error when sending a message, the bot will log the error in the console.
+## Sample Chat UI
+![image](https://github.com/Nex-TON/Hack-a-TON_Telegram_bot/assets/64398993/285bcd25-16bd-4a77-ae00-dea5fc23fcf9)
 
-Please note that the /stake command does not check if the two parameters are valid numbers. You may want to add validation to ensure correct use.
 
-## Customization
-To customize this bot, you can modify the bot commands and the messages that are sent in response to the commands. You can also add more commands or event listeners as per your needs.
-
-## Further Reading
-For more information on how to use the node-telegram-bot-api library, refer to the documentation.
