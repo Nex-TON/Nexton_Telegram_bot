@@ -48,8 +48,9 @@ The bot is set up to respond to the following commands:
 ## Bot Events
 The bot is set up to listen to the following events:
 
-- message: This event is triggered whenever a user sends a message to the bot. The chatId of the user is stored for use in other functions.
-Error Handling
+- **message**: This event is triggered whenever a user sends a message to the bot. The chatId of the user is stored for use in other functions.
+
+**Error Handling**
 If there is an error when sending a message, the bot will log the error in the console.
 
 Please note that the /stake command does not check if the two parameters are valid numbers. You may want to add validation to ensure correct use.
