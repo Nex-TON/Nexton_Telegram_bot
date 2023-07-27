@@ -6,10 +6,10 @@ This server code is for setting up a Telegram bot using Node.js and the node-tel
 ## Dependencies
 The dependencies for the server are as follows:
 
-express: A web application framework for Node.js.
-dotenv: A zero-dependency module that loads environment variables from a .env file into process.env.
-cors: A Node.js package for providing a middleware that can be used to enable CORS.
-node-telegram-bot-api: A Node.js wrapper for the Telegram Bot API.
+- express: A web application framework for Node.js.
+- dotenv: A zero-dependency module that loads environment variables from a .env file into process.env.
+- cors: A Node.js package for providing a middleware that can be used to enable CORS.
+- node-telegram-bot-api: A Node.js wrapper for the Telegram Bot API.
 To install these dependencies, run the following command in your terminal:
 
 ```
@@ -46,7 +46,7 @@ The bot is set up to respond to the following commands:
 ## Bot Events
 The bot is set up to listen to the following events:
 
-## message: This event is triggered whenever a user sends a message to the bot. The chatId of the user is stored for use in other functions.
+- message: This event is triggered whenever a user sends a message to the bot. The chatId of the user is stored for use in other functions.
 Error Handling
 If there is an error when sending a message, the bot will log the error in the console.
 
