@@ -27,7 +27,7 @@ bot.onText(/\/start/, (msg) => {
   const message = "Let's start!\nPlease connect wallet first";
   const button1 = {
     text: "Open Nexton",
-    web_app: { url: "https://nexton-front.vercel.app/" },
+    web_app: { url: "https://hack-a-ton-frontend.vercel.app/" },
   };
 
   // Create an array of inline button rows (each row is an array of button options)
