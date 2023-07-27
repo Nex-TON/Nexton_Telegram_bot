@@ -1,10 +1,10 @@
-require("dotenv").config();
 const express = require("express");
+const dotenv = require("dotenv");
 const cors = require("cors");
 const TelegramBot = require("node-telegram-bot-api");
 
 const app = express();
-
+dotenv.config();
 app.use(cors());
 app.use(express.json());
 
