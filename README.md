@@ -30,19 +30,20 @@ Then, to start the server, you can use the following command:
 ```
 node server.js
 ```
+
 This command starts the server on port 3000, and you should see a console log that says Server is running on port 3000.
 
 ## Server Endpoints
 The server has the following endpoints:
 
-GET 
-/chatId: Returns the chatId of the most recent chat with the bot.
+**GET**
+- **/chatId**: Returns the chatId of the most recent chat with the bot.
 
-Bot Commands
+**Bot Commands**
 The bot is set up to respond to the following commands:
-/start: Sends a message "Let's start!\nPlease connect wallet first" and a button to the user. The button is labeled 'Open Nexton' and when clicked, it takes the user to a specified URL.
+- **/start**: Sends a message "Let's start!\nPlease connect wallet first" and a button to the user. The button is labeled 'Open Nexton' and when clicked, it takes the user to a specified URL.
 
-/stake [var1] [var2]: This command accepts two variables and sends a message back to the user stating the two values that were staked.
+- **/stake [var1] [var2]:** This command accepts two variables and sends a message back to the user stating the two values that were staked.
 
 ## Bot Events
 The bot is set up to listen to the following events:
