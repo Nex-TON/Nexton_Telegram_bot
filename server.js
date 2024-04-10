@@ -29,9 +29,13 @@ bot.onText(/\/start/, (msg) => {
     text: "Open Nexton",
     web_app: { url: "https://hack-a-ton-frontend.vercel.app/" },
   };
+  const button2 = {
+    text: "🌈 Onboarding",
+    web_app: { url: "https://nex-ton.github.io/Nexton_Onboarding_Frontend/" },
+  };
 
   // Create an array of inline button rows (each row is an array of button options)
-  const inlineButtons = [[button1]];
+  const inlineButtons = [[button1, button2]];
 
   const buttonOptions = {
     reply_markup: {
