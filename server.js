@@ -27,7 +27,7 @@ bot.onText(/\/start/, (msg) => {
   const message = "Let's start!\nPlease connect wallet first";
   const button1 = {
     text: "Open Nexton",
-    web_app: { url: "https://hack-a-ton-frontend.vercel.app/" },
+    web_app: { url: "https://hack-a-ton-frontend-iota.vercel.app" },
   };
   const button2 = {
     text: "🌈 Onboarding",
