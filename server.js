@@ -24,7 +24,7 @@ bot.onText(/\/start/, (msg) => {
   const chatId = msg.chat.id;
 
   // Replace 'path/to/your/image.jpg' with the actual path to your image file
-  const message = "Stake $TON, receive a Nexton NFT, and benefit from staking and arbitrage yields!\nPlease connect wallet first";
+  const message = "Stake $TON, receive a Nexton NFT, and benefit from staking and arbitrage yields!";
   const button1 = {
     text: "Onboarding",
     web_app: { url: "https://nex-ton.github.io/Nexton_Onboarding_Frontend/" },
