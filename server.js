@@ -24,14 +24,14 @@ bot.onText(/\/start/, (msg) => {
   const chatId = msg.chat.id;
 
   // Replace 'path/to/your/image.jpg' with the actual path to your image file
-  const message = "Let's start!\nPlease connect wallet first";
+  const message = "Stake $TON, receive a Nexton NFT, and benefit from staking and arbitrage yields!\nPlease connect wallet first";
   const button1 = {
-    text: "Open Nexton",
-    web_app: { url: "https://www.nexton.tg" },
+    text: "Onboarding",
+    web_app: { url: "https://nex-ton.github.io/Nexton_Onboarding_Frontend/" },
   };
   const button2 = {
-    text: "🌈 Onboarding",
-    web_app: { url: "https://nex-ton.github.io/Nexton_Onboarding_Frontend/" },
+    text: "Open Nexton",
+    web_app: { url: "https://www.nexton.tg" },
   };
 
   // Create an array of inline button rows (each row is an array of button options)
