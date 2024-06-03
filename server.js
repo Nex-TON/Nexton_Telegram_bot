@@ -24,7 +24,8 @@ bot.onText(/\/start/, (msg) => {
   const chatId = msg.chat.id;
 
   // Replace 'path/to/your/image.jpg' with the actual path to your image file
-  const message = "Stake $TON, receive a Nexton NFT, and benefit from staking and arbitrage yields!";
+  const message =
+    "Stake $TON, receive a Nexton NFT, and benefit from staking and arbitrage yields!";
   const button1 = {
     text: "Onboarding",
     web_app: { url: "https://nex-ton.github.io/Nexton_Onboarding_Frontend/" },
@@ -44,10 +45,15 @@ bot.onText(/\/start/, (msg) => {
   };
 
   bot
-    .sendMessage(chatId, message, {
-      parse_mode: "HTML",
-      ...buttonOptions,
-    })
+    .sendPhoto(
+      chatId,
+      "https://nextonserver.s3.eu-north-1.amazonaws.com/nexton_stake.jpg",
+      {
+        parse_mode: "HTML",
+        caption: message,
+        ...buttonOptions,
+      }
+    )
     .catch((error) => {
       console.error("Error sending photo:", error);
     });
