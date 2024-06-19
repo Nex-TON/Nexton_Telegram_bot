@@ -1,23 +1,40 @@
+require("dotenv").config();
 const express = require("express");
-const dotenv = require("dotenv");
 const cors = require("cors");
 const TelegramBot = require("node-telegram-bot-api");
+const api = require("./api");
 
 const app = express();
-dotenv.config();
 app.use(cors());
 app.use(express.json());
 
 // replace the value below with the Telegram token you receive from @BotFather
-
 const token = process.env.TELEGRAM_BOT_TOKEN;
 // Create a bot that uses 'polling' to fetch new updates
 const bot = new TelegramBot(token, { polling: true });
 
 let chatId = 500;
 
-bot.on("message", (msg) => {
-  chatId = msg.chat.id;
+// Function to log user interaction
+async function logUserInteraction(userId, action, parameter) {
+  try {
+    await api.post("data/analytics/log", {
+      userId,
+      action,
+      parameter,
+    });
+  } catch (error) {
+    console.error("Error logging user interaction:", error);
+  }
+}
+
+// Handle /start command with parameters
+bot.onText(/\/start (.+)/, (msg, match) => {
+  const chatId = msg.chat.id;
+  const param = match[1]; // Extract the parameter after /start
+
+  // Log the parameter
+  logUserInteraction(chatId, "started", param);
 });
 
 bot.onText(/\/start/, (msg) => {
