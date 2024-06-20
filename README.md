@@ -1,6 +1,6 @@
 # Hack_a_TON_Telegram_bot
 
-Telegram Bot Server README   
+Telegram Bot Server README
 This server code is for setting up a Telegram bot using Node.js and the node-telegram-bot-api library.
 
 ## Dependencies
@@ -21,6 +21,7 @@ To get started, you'll need to create an .env file in your project root director
 
 ```
 TELEGRAM_BOT_TOKEN=your-telegram-bot-token
+SERVER_URL=your-server-url
 ```
 
 You can replace your-telegram-bot-token with the actual token that you received from @BotFather in Telegram.
@@ -37,11 +38,11 @@ This command starts the server on port 3000, and you should see a console log th
 The server has the following endpoints:
 
 **GET**
-- **/chatId**: Returns the chatId of the most recent chat with the bot.
+- **/chatId**: Returns the chatId of the most recent chat with the bot (test).
 
 **Bot Commands**
 The bot is set up to respond to the following commands:
-- **/start**: Sends a message "Let's start!\nPlease connect wallet first" and a button to the user. The button is labeled 'Open Nexton' and when clicked, it takes the user to a specified URL.
+- **/start**: Sends a message and two buttons to the user. The button is labeled 'Open Nexton' and when clicked, it takes the user to a specified URL.
 
 - **/stake [var1] [var2]:** This command accepts two variables and sends a message back to the user stating the two values that were staked.
 
