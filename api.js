@@ -1,4 +1,4 @@
-const axios = require("axios");
+const axios = require('axios');
 
 // Create an axios instance with a base URL
 const api = axios.create({
