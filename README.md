@@ -1,4 +1,4 @@
-# Hack_a_TON_Telegram_bot
+# TON_Telegram_bot
 
 Telegram Bot Server README
 This server code is for setting up a Telegram bot using Node.js and the node-telegram-bot-api library.
