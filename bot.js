@@ -1,6 +1,14 @@
 const TelegramBot = require('node-telegram-bot-api');
 const api = require('./api');
 
+const ONBOARDING_URL = 'https://nex-ton.github.io/Nexton_Onboarding_Frontend/';
+const NEXTON_URL = 'https://www.nexton.tg';
+const GLOBAL_CHANNEL_URL = 'https://t.me/nextonglobal';
+const LANDING_PAGE_URL = 'https://www.nexton.solutions/';
+
+const IMG_URL =
+  'https://nextonserver.s3.eu-north-1.amazonaws.com/nexton_stake.jpg';
+
 // Initialize the bot
 const token = process.env.TELEGRAM_BOT_TOKEN;
 const bot = new TelegramBot(token, { polling: true });
@@ -43,15 +51,23 @@ function sendWelcomeMessage(chatId) {
   const message =
     'Stake $TON, receive a Nexton NFT, and benefit from staking and arbitrage yields!';
   const button1 = {
-    text: 'Onboarding',
-    web_app: { url: 'https://nex-ton.github.io/Nexton_Onboarding_Frontend/' },
+    text: '🌈 Onboarding',
+    web_app: { url: ONBOARDING_URL },
   };
   const button2 = {
-    text: 'Open Nexton',
-    web_app: { url: 'https://www.nexton.tg' },
+    text: '🚀 Open Nexton',
+    web_app: { url: NEXTON_URL },
+  };
+  const button3 = {
+    text: '👥 Join our Global Channel',
+    url: GLOBAL_CHANNEL_URL,
+  };
+  const button4 = {
+    text: '👋 Join our Global Channel',
+    url: LANDING_PAGE_URL,
   };
 
-  const inlineButtons = [[button1, button2]];
+  const inlineButtons = [[button1], [button2], [button3], [button4]];
   const buttonOptions = {
     reply_markup: {
       inline_keyboard: inlineButtons,
@@ -59,15 +75,11 @@ function sendWelcomeMessage(chatId) {
   };
 
   bot
-    .sendPhoto(
-      chatId,
-      'https://nextonserver.s3.eu-north-1.amazonaws.com/nexton_stake.jpg',
-      {
-        parse_mode: 'HTML',
-        caption: message,
-        ...buttonOptions,
-      }
-    )
+    .sendPhoto(chatId, IMG_URL, {
+      parse_mode: 'HTML',
+      caption: message,
+      ...buttonOptions,
+    })
     .catch(error => {
       console.error('Error sending photo:', error);
     });
