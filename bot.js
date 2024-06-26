@@ -63,7 +63,7 @@ function sendWelcomeMessage(chatId) {
     url: GLOBAL_CHANNEL_URL,
   };
   const button4 = {
-    text: '👋 Join our Global Channel',
+    text: '👋 Official Website',
     url: LANDING_PAGE_URL,
   };
 
