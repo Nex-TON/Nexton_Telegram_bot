@@ -5,6 +5,7 @@ const ONBOARDING_URL = 'https://nex-ton.github.io/Nexton_Onboarding_Frontend/';
 const NEXTON_URL = 'https://www.nexton.tg';
 const GLOBAL_CHANNEL_URL = 'https://t.me/nextonglobal';
 const LANDING_PAGE_URL = 'https://www.nexton.solutions/';
+const ARBITRAGE_BOT_PERFORMANCE_URL = 'https://t.me/+_qrUElvbPRtlZDI1';
 
 const IMG_URL =
   'https://nextonserver.s3.eu-north-1.amazonaws.com/nexton_stake.jpg';
@@ -66,8 +67,12 @@ function sendWelcomeMessage(chatId) {
     text: '👋 Official Website',
     url: LANDING_PAGE_URL,
   };
+  const button5 = {
+    text: '📊 Go to Arbitrage Bot Performance',
+    url: ARBITRAGE_BOT_PERFORMANCE_URL,
+  };
 
-  const inlineButtons = [[button1], [button2], [button3], [button4]];
+  const inlineButtons = [[button1], [button2], [button3], [button4], [button5]];
   const buttonOptions = {
     reply_markup: {
       inline_keyboard: inlineButtons,
