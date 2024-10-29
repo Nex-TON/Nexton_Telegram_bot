@@ -6,6 +6,7 @@ const NEXTON_URL = 'https://www.nexton.tg';
 const GLOBAL_CHANNEL_URL = 'https://t.me/nextonglobal';
 const LANDING_PAGE_URL = 'https://www.nexton.solutions/';
 const ARBITRAGE_BOT_PERFORMANCE_URL = 'https://t.me/+_qrUElvbPRtlZDI1';
+const COMMUNITY_URL='https://t.me/NextonOfficialCommunity'
 
 const IMG_URL =
   'https://nextonserver.s3.eu-north-1.amazonaws.com/nexton_stake.jpg';
@@ -64,15 +65,19 @@ function sendWelcomeMessage(chatId) {
     url: GLOBAL_CHANNEL_URL,
   };
   const button4 = {
+    text: '🔥 Join Our Official Community',
+    url: COMMUNITY_URL,
+  };
+  const button5 = {
     text: '👋 Official Website',
     url: LANDING_PAGE_URL,
   };
-  const button5 = {
+  const button6 = {
     text: '📊 Go to Arbitrage Bot Performance',
     url: ARBITRAGE_BOT_PERFORMANCE_URL,
   };
 
-  const inlineButtons = [[button1], [button2], [button3], [button4], [button5]];
+  const inlineButtons = [[button1], [button2], [button3], [button4], [button5], [button6]];
   const buttonOptions = {
     reply_markup: {
       inline_keyboard: inlineButtons,
