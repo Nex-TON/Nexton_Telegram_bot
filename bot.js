@@ -9,7 +9,8 @@ const ARBITRAGE_BOT_PERFORMANCE_URL = 'https://t.me/+_qrUElvbPRtlZDI1';
 const COMMUNITY_URL='https://t.me/NextonOfficialCommunity'
 
 const IMG_URL =
-  'https://nextonserver.s3.eu-north-1.amazonaws.com/nexton_stake.jpg';
+  `https://nextonserver.s3.eu-north-1.amazonaws.com/NextonBanner.png`;
+  // 'https://nextonserver.s3.eu-north-1.amazonaws.com/nexton_stake.jpg';
 
 // Initialize the bot
 const token = process.env.TELEGRAM_BOT_TOKEN;
