@@ -10,7 +10,7 @@ const COMMUNITY_URL='https://t.me/NextonOfficialCommunity';
 const CS_CHANNEL_URL = 'https://t.me/m/-Y3bstHbMzE9';
 
 const IMG_URL =
-  `https://nextonserver.s3.eu-north-1.amazonaws.com/NextonBanner.png`;
+  `https://nextonserver.s3.eu-north-1.amazonaws.com/NextonBannerV2.png`;
   // 'https://nextonserver.s3.eu-north-1.amazonaws.com/nexton_stake.jpg';
 
 // Initialize the bot
